@@ -1,0 +1,37 @@
+import csv
+
+data = [
+    [  "Amita" , 1 , 67,"B", "Jaipur" ],
+     [  "B" , 2 , 97,"A", "Assam" ],
+      [  "C" , 3 , 21,"D", "Jaisalmer" ],
+       [  "D" , 4 , 22,"C", "Jharkhand" ],
+        [  "E" , 561 , 31,"B", "Haryana" ],
+         [  "F" , 55 , 23,"B", "Jaipur" ],
+          [  "G" , 4 , 61,"B", "Kashmir" ],
+           [  "I" , 12 , 62,"B", "Jaipur" ],
+            [  "j" , 1 , 67,"B", "Jaipur" ],
+             [  "K" , 233 , 67,"B", "Jaipur" ],
+              [  "ter" , 2342 , 67,"B", "Patna" ],
+               [  "RUBY" , 5657 , 67,"B", "Jaipur" ],
+                [  "SIMA" , 78 , 67,"B", "Delhi"],
+                 [  "BILL" , 111 , 67,"B", "Silchar" ],
+                  [  "Amit" , 12222 , 77,"A", "Gujrat" ],
+                     [  "Zack" , 3333 , 87,"A", "Mumbai"],
+                        [  "Lara" , 4444 , 91,"A", "Chennai"],
+                            [  "Nia" , 5555 , 95,"A", "Bangalore"],
+                                [  "Mia" , 6666 , 99,"A", "Hyderabad"],
+                                ["Anna", 7777, 85, "A", "Pune"],
+                                ["Mellla", 8888, 89, "A", "Kolkata"]]
+
+with open('data.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(data)
+                
+
+
+with open('data.csv', 'r', newline='') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        print(row)                      
+
+                
